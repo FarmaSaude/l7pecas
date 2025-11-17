@@ -1,5 +1,5 @@
 // Número de WhatsApp: placeholder conforme solicitado. Substitua "." pelo seu número (apenas dígitos) quando quiser.
-const RAW_WA_NUMBER = "11994395776"; // Seu número sem DDI
+const RAW_WA_NUMBER = "11994397776"; // Seu número sem DDI
 function normalizeNumber(n){
   const digits = (n||"").replace(/\D/g, "");
   if(digits.startsWith("55")) return digits; // já tem DDI BR
@@ -13,11 +13,13 @@ function waUrl(message){
 // Atualiza os cliques dos links do WhatsApp para abrir com mensagem pronta
 function setupWaLinks(){
   document.querySelectorAll('.wa-link').forEach(a=>{
-    const getMsg = () => a.getAttribute('data-message') || "OOlá, gostaria de solicitar um orçamento para peças.";
+    const getMsg = () => a.getAttribute('data-message') || "Olá, gostaria de falar com a Auto Peças Online!";
     const url = waUrl(getMsg());
     // Define o link de fallback
     a.setAttribute('href', url);
     a.setAttribute('target','_blank');
+    a.setAttribute('rel','noopener');
+    // Abre imediatamente ao clicar
     a.addEventListener('click', (e)=>{
       e.preventDefault();
       window.open(waUrl(getMsg()), '_blank', 'noopener');
