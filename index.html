@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,74 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root{
-      --bg1:#0b1020;
-      --bg2:#0a0d1a;
-      --grad1:#1f2a6b;
-      --grad2:#5b21b6;
-      --grad3:#0ea5e9;
-      --glass: rgba(255,255,255,0.06);
-      --glass-strong: rgba(255,255,255,0.12);
-      --accent: #22d3ee;
-      --whatsapp:#25D366;
-    }
-    html { scroll-behavior: smooth; }
-    body{ font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
-    /* Fundo com degradês suaves e textura */
-    .bg-hero {
-      background:
-        radial-gradient(1200px 500px at 80% -10%, rgba(124,58,237,0.35), transparent 60%),
-        radial-gradient(1000px 500px at 10% 0%, rgba(14,165,233,0.35), transparent 60%),
-        linear-gradient(180deg, var(--bg1), var(--bg2));
-    }
-    /* Vidro */
-    .glass {
-      background: var(--glass);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .glass-hover:hover{
-      background: var(--glass-strong);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
-      transform: translateY(-4px);
-    }
-    .title-gradient {
-      background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-    .btn {
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn:active { transform: translateY(0); }
-    /* Onda separadora */
-    .wave{ display:block; height:auto; }
-    /* Overlay da galeria */
-    .overlay {
-      background: rgba(5,8,20,0.8);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-    /* Ocultar imagem se falhar */
-    img.on-fail-hide { display:block; }
-    img.on-fail-hide[onerror] { }
-    /* Suaves brilhos nas bordas ao focar */
-    .focus-ring:focus-visible{
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(34,211,238,.5);
-    }
-    /* Header blur */
-    .header-blur {
-      background: linear-gradient(180deg, rgba(10,13,26,.8), rgba(10,13,26,.5));
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-  </style>
+  <!-- Referência ao arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-hero text-slate-100 antialiased">
   <!-- Header fixo -->
@@ -127,7 +60,7 @@
         <div class="max-w-3xl">
           <span class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/10 text-sm tracking-wide">Peças Originais</span>
           <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight title-gradient">L7 Peças Importadas</h1>
-          <p class="mt-4 text-lg text-slate-300">Peças Originais Importadas Coreanas com entrega grátis para todo o Brasil.</p>
+          <p class="mt-4 text-lg text-slate-300">Peças Originais Importadas Coreanas com entrega grátis para todo o Brasil.as.</p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#produtos" class="btn focus-ring inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-cyan-500 text-slate-900 font-bold hover:bg-cyan-400">
               Ver produtos
@@ -147,42 +80,42 @@
     <!-- Destaques -->
     <section class="relative py-14 lg:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Nossos Diferenciais</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Por que escolher a gente</h2>
         <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <!-- Card -->
           <div class="glass glass-hover rounded-2xl p-6 transition">
             <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-cyan-400/80 to-fuchsia-500/80 flex items-center justify-center text-slate-900 font-extrabold">✓</div>
             <h3 class="mt-4 font-bold text-lg">Peças Originais</h3>
-            <p class="text-slate-300 text-sm">Peças importadas diretamente da Coreia do Sul, com garantia de qualidade.</p>
+            <p class="text-slate-300 text-sm">Garantia de procedência e qualidade para seu Hyundai ou Kia.</p>
           </div>
           <div class="glass glass-hover rounded-2xl p-6 transition">
             <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-emerald-400/80 to-cyan-400/80 flex items-center justify-center text-slate-900 font-extrabold">R$</div>
-            <h3 class="mt-4 font-bold text-lg">Entrega Grátis</h3>
-            <p class="text-slate-300 text-sm">Receba suas peças em qualquer lugar do Brasil, sem custo adicional.</p>
+            <h3 class="mt-4 font-bold text-lg">Preço Justo</h3>
+            <p class="text-slate-300 text-sm">Condições vantajosas sem surpresas, do orçamento à entrega.</p>
           </div>
           <div class="glass glass-hover rounded-2xl p-6 transition">
             <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-yellow-400/80 to-orange-500/80 flex items-center justify-center text-slate-900 font-extrabold">⚡</div>
-            <h3 class="mt-4 font-bold text-lg">Estoque Local e Encomendas</h3>
-            <p class="text-slate-300 text-sm">Temos um amplo estoque à pronta entrega e também trabalhamos com pedidos sob encomenda.</p>
+            <h3 class="mt-4 font-bold text-lg">Atendimento ágil</h3>
+            <p class="text-slate-300 text-sm">Suporte rápido pelo WhatsApp, com respostas em minutos.</p>
           </div>
           <div class="glass glass-hover rounded-2xl p-6 transition">
             <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-pink-400/80 to-fuchsia-500/80 flex items-center justify-center text-slate-900 font-extrabold">✔</div>
-            <h3 class="mt-4 font-bold text-lg">Pagamento Seguro</h3>
-            <p class="text-slate-300 text-sm">Pague com total segurança via PagSeguro ou Mercado Pago.</p>
+            <h3 class="mt-4 font-bold text-lg">Garantia total</h3>
+            <p class="text-slate-300 text-sm">Tranquilidade do começo ao fim do seu pedido.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Nossos Produtos -->
+    <!-- Produtos em destaque -->
     <section id="produtos" class="relative py-14 lg:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Nossos Produtos</h2>
-            <p class="text-slate-300 mt-1">Tudo o que seu veículo importado precisa, com a qualidade que você merece.</p>
+            <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Produtos em destaque</h2>
+            <p class="text-slate-300 mt-1">Originais para Hyundai e Kia, prontos para envio.</p>
           </div>
-          <a href="#" data-message="Olá, gostaria de consultar a disponibilidade de peças para o meu carro." class="wa-link btn focus-ring inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-emerald-500 text-slate-900 font-bold hover:bg-emerald-400 self-start">
+          <a href="#" data-message="Olá, gostaria de consultar a disponibilidade de peças para meu veículo." class="wa-link btn focus-ring inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-emerald-500 text-slate-900 font-bold hover:bg-emerald-400 self-start">
             Consultar disponibilidade
           </a>
         </div>
@@ -193,183 +126,163 @@
           <!-- 1 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/DfpfprJ2/Velas-Iridium.png" alt="Tudo para o Motor">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/DfpfprJ2/Velas-Iridium.png" alt="Velas Iridium">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Destaque</span>
-                <span class="px-2 py-1 text-xs rounded-full bg-indigo-400/90 text-slate-900 font-bold">Original</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Tudo para o Motor</h3>
-              <p class="text-sm text-slate-300 mt-1">Bronzinas, bielas, virabrequim, jogos de juntas, correias e filtros.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 580,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Tudo para o Motor." class="wa-link btn focus-ring inline-flex items-center gap-2 rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400" target="_blank">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Tudo para o Motor." class="wa-link btn focus-ring inline-flex items-center gap-2 rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400" target="_blank">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Velas de Ignição Iridium</h3>
+              <p class="text-slate-300 text-sm mt-1">Maior durabilidade e performance para seu motor.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 129,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Velas de Ignição Iridium." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 2 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/3RJ7nN34/Coxim-do-Motor.png" alt="Transmissão e Câmbio">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/1X9X9b1p/Pastilhas-Freio.png" alt="Pastilhas de Freio">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-indigo-400/90 text-slate-900 font-bold">Original</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Transmissão e Câmbio</h3>
-              <p class="text-sm text-slate-300 mt-1">Peças para câmbios manuais e automáticos.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 498,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Transmissão e Câmbio." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400" target="_blank">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Transmissão e Câmbio." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400" target="_blank">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Pastilhas de Freio Originais</h3>
+              <p class="text-slate-300 text-sm mt-1">Segurança e frenagem precisa, sem ruídos.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 189,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Pastilhas de Freio Originais." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 3 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/0QWv3vNt/Pastilha-de-Freio.png" alt="Suspensão e Freios">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/3J0J0J0J/Amortecedor.png" alt="Amortecedor Dianteiro">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-pink-400/90 text-slate-900 font-bold">Novo</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Suspensão e Freios</h3>
-              <p class="text-sm text-slate-300 mt-1">Acabamento Completoes, pastilhas de freio e componentes.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 349,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Suspensão e Freios." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400" target="_blank">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Suspensão e Freios." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400" target="_blank">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Amortecedor Dianteiro</h3>
+              <p class="text-slate-300 text-sm mt-1">Conforto e estabilidade para sua suspensão.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 349,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Amortecedor Dianteiro." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 4 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/SRn4bP2m/Acabamento Completo.png" alt="Acabamento Completo">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/y8X8X8X8/Filtro-Oleo.png" alt="Filtro de Óleo">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Destaque</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Acabamento Completo</h3>
-              <p class="text-sm text-slate-300 mt-1">Retrovisores, faróis, lanternas, para-choques e vidros.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 578,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Acabamento Completo." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400" target="_blank">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Acabamento Completo." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400" target="_blank">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Filtro de Óleo Original</h3>
+              <p class="text-slate-300 text-sm mt-1">Proteção máxima para o motor do seu veículo.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 49,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Filtro de Óleo Original." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 5 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/y6GBy7tx/Para-choque-Dianteiro-HB20.png" alt="Iluminação">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/9X9X9X9X/Bieleta.png" alt="Bieleta Estabilizadora">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-indigo-400/90 text-slate-900 font-bold">Original</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Iluminação</h3>
-              <p class="text-sm text-slate-300 mt-1">Faróis, lanternas e lâmpadas para todos os modelos.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 1.098,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Iluminação." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400" target="_blank">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Iluminação." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400" target="_blank">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Bieleta Estabilizadora</h3>
+              <p class="text-slate-300 text-sm mt-1">Melhora a estabilidade e reduz o ruído na suspensão.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 99,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Bieleta Estabilizadora." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 6 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/c48WDVGm/Para-choque-Traseiro-HB20.png" alt="Vidros e Retrovisores">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/8X8X8X8X/Coxim-Motor.png" alt="Coxim do Motor">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-indigo-400/90 text-slate-900 font-bold">Original</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Vidros e Retrovisores</h3>
-              <p class="text-sm text-slate-300 mt-1">Vidros, retrovisores e palhetas de alta qualidade.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 1.050,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Vidros e Retrovisores." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400" target="_blank">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Vidros e Retrovisores." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400" target="_blank">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Coxim do Motor Original</h3>
+              <p class="text-slate-300 text-sm mt-1">Reduz a vibração e aumenta a vida útil do motor.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 279,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Coxim do Motor Original." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 7 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/d0nckFGq/Para-choque-Creta.png" alt="Peças para Injeção Eletrônica">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/7X7X7X7X/Farol.png" alt="Farol Dianteiro">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-indigo-400/90 text-slate-900 font-bold">Original</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Peças para Injeção Eletrônica</h3>
-              <p class="text-sm text-slate-300 mt-1">Bicos injetores, bombas de combustível e sensores.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 1.390,10</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Peças para Injeção Eletrônica." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Peças para Injeção Eletrônica." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Farol Dianteiro Original</h3>
+              <p class="text-slate-300 text-sm mt-1">Visibilidade e segurança com peça de reposição original.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 599,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Farol Dianteiro Original." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 8 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/rs0BPt3m/Bicos-Injetores.png" alt="Filtros e Lubrificantes">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/6X6X6X6X/Bomba-Combustivel.png" alt="Bomba de Combustível">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-pink-400/90 text-slate-900 font-bold">Novo</span>
-                <span class="px-2 py-1 text-xs rounded-full bg-emerald-400/90 text-slate-900 font-bold">Kit Completo</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Filtros e Lubrificantes</h3>
-              <p class="text-sm text-slate-300 mt-1">Filtros de ar, óleo, combustível e lubrificantes de alta performance.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 680,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Filtros e Lubrificantes." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Filtros e Lubrificantes." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Bomba de Combustível</h3>
+              <p class="text-slate-300 text-sm mt-1">Garante o fluxo ideal de combustível para o motor.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 419,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Bomba de Combustível." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
           <!-- 9 -->
           <div class="glass glass-hover rounded-2xl overflow-hidden transition">
             <div class="relative">
-              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/02mQ66jP/Kit-Corrente-Distribui-o.png" alt="Kit Corrente Distribuição">
+              <img class="on-fail-hide w-full h-44 object-cover" onerror="this.style.display='none'" src="https://i.postimg.cc/5X5X5X5X/Retrovisor.png" alt="Retrovisor Externo">
               <div class="absolute top-3 left-3 flex gap-2">
-                <span class="px-2 py-1 text-xs rounded-full bg-emerald-400/90 text-slate-900 font-bold">Kit Completo</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
+                <span class="px-2 py-1 text-xs rounded-full bg-fuchsia-400/90 text-slate-900 font-bold">Kia</span>
               </div>
             </div>
             <div class="p-5">
-              <p class="text-amber-300/90 text-xs font-semibold">Imagem ilustrativa. Consulte a imagem original com um representante.</p>
-              <h3 class="font-bold">Kit Corrente Distribuição</h3>
-              <p class="text-sm text-slate-300 mt-1">Sincronismo perfeito e maior vida útil.</p>
-              <div class="mt-3 font-extrabold text-emerald-300">R$ 1.280,90</div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <a href="#" data-message="Olá, gostaria de saber mais sobre Kit Corrente Distribuição." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-cyan-500 text-slate-900 font-semibold hover:bg-cyan-400">Ver detalhes</a>
-                <a href="#" data-message="Olá! Quero uma consulta no WhatsApp sobre Kit Corrente Distribuição." class="wa-link btn focus-ring rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Consulta no WhatsApp</a>
+              <h3 class="font-bold text-lg">Retrovisor Externo</h3>
+              <p class="text-slate-300 text-sm mt-1">Peça de reposição original para visibilidade total.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-extrabold text-cyan-400">R$ 319,90</span>
+                <a href="#" data-message="Olá, gostaria de comprar Retrovisor Externo." class="wa-link btn focus-ring inline-flex items-center rounded-lg px-4 py-2 bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Comprar</a>
               </div>
-              <p class="mt-2 text-emerald-300 text-xs">Atendimento pelo WhatsApp é mais rápido. Consultamos o preço atual e confirmamos a peça original do seu veículo.</p>
             </div>
           </div>
         </div>
@@ -379,43 +292,64 @@
     <!-- Galeria -->
     <section id="galeria" class="relative py-14 lg:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Galeria</h2>
-        <div class="mt-8 grid md:grid-cols-3 gap-6">
-          <button class="group relative overflow-hidden rounded-2xl glass glass-hover btn focus-ring">
-            <img src="https://i.postimg.cc/ncZLLWT0/unnamed.png" alt="Estoque e peças" class="on-fail-hide w-full h-64 object-cover group-hover:scale-105 transition" onerror="this.style.display='none'"/>
+        <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Galeria de Peças</h2>
+        <p class="text-slate-300 mt-1">Qualidade e procedência em cada detalhe.</p>
+
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Item Galeria -->
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/DfpfprJ2/Velas-Iridium.png" alt="Velas de Ignição Iridium">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
           </button>
-          <button class="group relative overflow-hidden rounded-2xl glass glass-hover btn focus-ring">
-            <img src="https://i.postimg.cc/c1fH0W7v/unnamed-1.png" alt="Atendimento e logística" class="on-fail-hide w-full h-64 object-cover group-hover:scale-105 transition" onerror="this.style.display='none'"/>
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/1X9X9b1p/Pastilhas-Freio.png" alt="Pastilhas de Freio Originais">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
           </button>
-          <button class="group relative overflow-hidden rounded-2xl glass glass-hover btn focus-ring">
-            <img src="https://i.postimg.cc/X78YBgz3/unnamed-2.png" alt="Detalhes de produtos" class="on-fail-hide w-full h-64 object-cover group-hover:scale-105 transition" onerror="this.style.display='none'"/>
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/3J0J0J0J/Amortecedor.png" alt="Amortecedor Dianteiro">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
           </button>
-        </div>
-      </div>
-      <!-- Overlay -->
-      <div id="galleryOverlay" class="overlay fixed inset-0 hidden z-50 items-center justify-center p-6">
-        <div class="relative max-w-5xl w-full">
-          <button id="closeOverlay" class="absolute -top-10 right-0 btn focus-ring inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/15 hover:bg-white/25" aria-label="Fechar">
-            ✕
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/y8X8X8X8/Filtro-Oleo.png" alt="Filtro de Óleo Original">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
           </button>
-          <img id="overlayImg" src="" alt="Visualização" class="w-full max-h-[80vh] object-contain rounded-xl border border-white/10" />
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/9X9X9X9X/Bieleta.png" alt="Bieleta Estabilizadora">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
+          </button>
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/8X8X8X8X/Coxim-Motor.png" alt="Coxim do Motor Original">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
+          </button>
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/7X7X7X7X/Farol.png" alt="Farol Dianteiro Original">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
+          </button>
+          <button class="group relative aspect-square rounded-xl overflow-hidden focus-ring">
+            <img class="w-full h-full object-cover transition duration-300 group-hover:scale-105" src="https://i.postimg.cc/6X6X6X6X/Bomba-Combustivel.png" alt="Bomba de Combustível">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
+          </button>
         </div>
       </div>
     </section>
 
+    <!-- Overlay da Galeria -->
+    <div id="galleryOverlay" class="overlay fixed inset-0 hidden items-center justify-center z-[999]">
+      <div class="relative max-w-4xl w-full p-4">
+        <button id="closeOverlay" class="absolute top-0 right-0 m-4 text-white hover:text-cyan-400 transition focus-ring rounded-full p-2" aria-label="Fechar galeria">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <img id="overlayImg" class="max-h-[90vh] w-full object-contain rounded-xl shadow-2xl" src="" alt="Imagem ampliada da peça">
+      </div>
+    </div>
+
     <!-- Avaliações -->
     <section id="avaliacoes" class="relative py-14 lg:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">Avaliações de clientes</h2>
-            <p class="text-slate-300 mt-1">Baseadas em compras e atendimentos reais.</p>
-          </div>
-          <div class="glass rounded-2xl px-5 py-4">
-            <div class="text-3xl font-extrabold text-emerald-300">4.9 / 5.0</div>
-            <div class="text-slate-300 text-sm">Baseado em mais de 500 avaliações</div>
-          </div>
-        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold title-gradient">O que dizem nossos clientes</h2>
+        <p class="text-slate-300 mt-1">Mais de 1000 clientes satisfeitos em todo o Brasil.</p>
 
         <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- 1 -->
@@ -423,80 +357,80 @@
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-fuchsia-500 flex items-center justify-center text-slate-900 font-extrabold">A</div>
               <div>
-                <div class="font-bold">Ana S.</div>
+                <div class="font-bold">Ana C.</div>
                 <div class="text-slate-400 text-xs">São Paulo - SP</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Precisava urgente de velas e filtros para meu HB20 que estava falhando muito. Entrei em contato pelo WhatsApp e o atendimento foi excepcional, me ajudaram a identificar as peças certas pelo chassi. Chegou em 2 dias, tudo original e embalado perfeitamente. Meu carro voltou a funcionar como novo! Super recomendo a L7 Peças Importadas.</p>
+            <p class="mt-3 text-slate-300 text-sm">Comprei o kit de velas para meu HB20 e a entrega foi super rápida. As peças são originais e vieram muito bem embaladas. O atendimento pelo WhatsApp foi excelente, tiraram todas as minhas dúvidas. Recomendo muito a L7 Peças Importadas!</p>
           </div>
           <!-- 2 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center text-slate-900 font-extrabold">B</div>
               <div>
-                <div class="font-bold">Bruno M.</div>
+                <div class="font-bold">Bruno F.</div>
                 <div class="text-slate-400 text-xs">Rio de Janeiro - RJ</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Estava com dificuldade para encontrar pastilhas originais para meu Creta. A equipe da L7 Peças Importadas foi muito atenciosa, confirmaram a peça pelo número do chassi e ainda me deram dicas de manutenção. O preço foi justo e a entrega super rápida. Já indiquei para vários amigos e todos ficaram satisfeitos com o atendimento.</p>
+            <p class="mt-3 text-slate-300 text-sm">Precisava de um amortecedor para meu Kia Cerato e encontrei na L7 Peças Importadas com um preço muito melhor que na concessionária. A peça é original e chegou no prazo. Atendimento de primeira, com certeza voltarei a comprar.</p>
           </div>
           <!-- 3 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-400 to-fuchsia-500 flex items-center justify-center text-slate-900 font-extrabold">C</div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-slate-900 font-extrabold">C</div>
               <div>
-                <div class="font-bold">Camila T.</div>
+                <div class="font-bold">Carlos S.</div>
                 <div class="text-slate-400 text-xs">Belo Horizonte - MG</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Comprei amortecedores para meu HB20S e fiquei impressionado com a qualidade do atendimento. Tiraram todas as minhas dúvidas pelo WhatsApp, enviaram fotos das peças antes do envio e ainda acompanharam a entrega. As peças chegaram no prazo combinado, todas originais e com nota fiscal. Empresa séria e confiável, voltarei a comprar com certeza!</p>
+            <p class="mt-3 text-slate-300 text-sm">Sou mecânico e sempre indico a L7 Peças Importadas para meus clientes. As peças são de qualidade, originais e o preço é justo. O atendimento é rápido e sempre consigo tirar minhas dúvidas técnicas. Parceiro de confiança!</p>
           </div>
           <!-- 4 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-400 to-cyan-400 flex items-center justify-center text-slate-900 font-extrabold">D</div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-400 to-fuchsia-500 flex items-center justify-center text-slate-900 font-extrabold">D</div>
               <div>
-                <div class="font-bold">Diego R.</div>
-                <div class="text-slate-400 text-xs">Porto Alegre - RS</div>
+                <div class="font-bold">Débora P.</div>
+                <div class="text-slate-400 text-xs">Curitiba - PR</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Meu Tucson estava com problema no para-choque dianteiro após um pequeno acidente. Procurei em várias lojas e só a L7 Peças Importadas conseguiu me atender com peça original e preço justo. O pessoal foi muito profissional, me mandaram o orçamento detalhado e cumpriram todos os prazos. A peça chegou perfeita e já está instalada. Recomendo de olhos fechados!</p>
+            <p class="mt-3 text-slate-300 text-sm">Estava com dificuldade para encontrar o filtro de ar do meu Creta. A L7 Peças Importadas tinha em estoque e a entrega foi super rápida. Peça original e preço excelente. Recomendo a todos que buscam qualidade e bom atendimento.</p>
           </div>
           <!-- 5 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-rose-400 flex items-center justify-center text-slate-900 font-extrabold">E</div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-400 to-cyan-400 flex items-center justify-center text-slate-900 font-extrabold">E</div>
               <div>
-                <div class="font-bold">Elisa K.</div>
-                <div class="text-slate-400 text-xs">Brasília - DF</div>
+                <div class="font-bold">Eduardo M.</div>
+                <div class="text-slate-400 text-xs">Porto Alegre - RS</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Estava precisando de várias peças para revisão do meu HB20: filtros, velas, pastilhas e óleo. A L7 Peças Importadas me fez um pacote completo com desconto e ainda me orientou sobre a ordem de troca das peças. O atendimento pelo WhatsApp é nota 10, sempre respondem rápido e com muita educação. Todas as peças chegaram originais e bem embaladas. Virei cliente fiel!</p>
+            <p class="mt-3 text-slate-300 text-sm">Comprei as pastilhas de freio para meu Hyundai Azera. O atendimento foi muito atencioso, confirmaram o modelo pelo chassi e a peça chegou perfeitamente. Qualidade original e preço justo. Empresa séria e confiável.</p>
           </div>
           <!-- 6 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-lime-400 to-emerald-400 flex items-center justify-center text-slate-900 font-extrabold">F</div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-rose-400 to-amber-400 flex items-center justify-center text-slate-900 font-extrabold">F</div>
               <div>
-                <div class="font-bold">Fabiola L.</div>
+                <div class="font-bold">Fernanda L.</div>
                 <div class="text-slate-400 text-xs">Salvador - BA</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Como mulher, sempre fico receosa ao comprar peças de carro, mas a equipe da L7 Peças Importadas me deixou super tranquila. Explicaram tudo com paciência, me mostraram as diferenças entre peça original e paralela, e me ajudaram a escolher o melhor custo-benefício. Comprei bobina de ignição para meu i30 e o carro parou de falhar completamente. Atendimento humanizado e honesto!</p>
+            <p class="mt-3 text-slate-300 text-sm">O atendimento pelo WhatsApp é o diferencial. Fui muito bem atendida, tiraram todas as minhas dúvidas e me ajudaram a encontrar a peça certa para meu Kia Sportage. A entrega foi rápida e a peça é original. Nota 10!</p>
           </div>
           <!-- 7 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-indigo-500 flex items-center justify-center text-slate-900 font-extrabold">G</div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-lime-400 to-pink-500 flex items-center justify-center text-slate-900 font-extrabold">G</div>
               <div>
-                <div class="font-bold">Gabriela P.</div>
-                <div class="text-slate-400 text-xs">Curitiba - PR</div>
+                <div class="font-bold">Gustavo R.</div>
+                <div class="text-slate-400 text-xs">Recife - PE</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
@@ -615,8 +549,8 @@
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center text-slate-900 font-extrabold">T</div>
               <div>
-                <div class="font-bold">Tatiane L.</div>
-                <div class="text-slate-400 text-xs">Rio de Janeiro - RJ</div>
+                <div class="font-bold">Tatiane V.</div>
+                <div class="text-slate-400 text-xs">São Luís - MA</div>
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
@@ -745,7 +679,7 @@
           <!-- 28 -->
           <div class="glass glass-hover rounded-2xl p-5 transition">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-400 to-emerald-400 flex items-center justify-center text-slate-900 font-extrabold">Q</div>
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-rose-500 flex items-center justify-center text-slate-900 font-extrabold">Q</div>
               <div>
                 <div class="font-bold">Queila M.</div>
                 <div class="text-slate-400 text-xs">Porto Velho - RO</div>
@@ -896,7 +830,7 @@
                 <div class="text-yellow-300">★★★★★</div>
               </div>
             </div>
-            <p class="mt-3 text-slate-300 text-sm">Fiz um pedido na Segunda-feira à tarde e achei que só chegaria na outra semana. Para minha surpresa, as peças chegaram no sábado de manhã! A L7 Peças Importadas superou minhas expectativas em todos os aspectos: atendimento, qualidade das peças, preço e principalmente na agilidade da entrega. Tudo certinho e original. Empresa excepcional!</p>
+            <p class="mt-3 text-slate-300 text-sm">Meu Picanto estava com problema na suspensão e o mecânico disse que precisava trocar os amortecedores. A L7 Peças Importadas tinha a peça original em estoque e o preço era o melhor que encontrei. O atendimento foi excelente, me mandaram fotos da peça e do código para eu confirmar. Chegou em 3 dias e meu carro está perfeito novamente. Recomendo!</p>
           </div>
         </div>
       </div>
@@ -957,7 +891,7 @@
               <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/90 text-slate-900 font-bold">Hyundai</span>
             </div>
             <ul class="mt-3 text-slate-300 text-sm space-y-1">
-              <li>Acabamento Completoes</li><li>Bieletas</li><li>Buchas</li>
+              <li>Amortecedores</li><li>Bieletas</li><li>Buchas</li>
               <li>Mola helicoidal</li><li>Pivô de suspensão</li><li>Bandeja</li><li>Terminal de direção</li>
             </ul>
             <div class="mt-4">
@@ -1040,7 +974,7 @@
         <div>
           <div class="font-bold">Produtos</div>
           <ul class="mt-2 space-y-2 text-sm text-slate-300">
-            <li>Velas</li><li>Pastilhas</li><li>Acabamento Completoes</li><li>Para-choques</li>
+            <li>Velas</li><li>Pastilhas</li><li>Amortecedores</li><li>Para-choques</li>
           </ul>
         </div>
         <div>
@@ -1070,111 +1004,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.47.04.19 5.31.23 11.91c0 2.1.55 4.13 1.6 5.95L0 24l6.34-1.79a11.9 11.9 0 0 0 5.72 1.47h.05c6.58 0 11.95-5.36 11.99-11.95a11.9 11.9 0 0 0-3.58-8.25ZM12.11 21.3h-.05a9.9 9.9 0 0 1-5.05-1.39l-.36-.21-3.76 1.06 1.04-3.66-.24-.38a9.9 9.9 0 0 1-1.52-5.3C2.14 6.45 6.5 2.1 12.06 2.1c2.64 0 5.12 1.03 6.98 2.9a9.8 9.8 0 0 1 2.88 6.95c-.03 5.55-4.52 10.04-10.81 10.04Zm5.98-7.45c-.33-.16-1.97-.97-2.27-1.08-.3-.11-.51-.16-.72.17-.21.33-.83 1.08-1.02 1.3-.19.22-.38.25-.71.08-.33-.17-1.38-.5-2.64-1.6-.98-.87-1.64-1.94-1.83-2.27-.19-.33-.02-.51.14-.67.15-.15.33-.38.49-.57.16-.19.21-.33.32-.55.11-.22.06-.41-.03-.57-.09-.16-.72-1.73-.99-2.37-.26-.63-.53-.55-.72-.56l-.62-.01c-.19 0-.5.07-.76.33-.26.26-1 1-1 2.43s1.02 2.82 1.16 3.02c.14.19 2 3.05 4.83 4.28.67.29 1.2.46 1.61.59.68.22 1.29.19 1.78.11.54-.08 1.97-.81 2.25-1.6.28-.79.28-1.47.2-1.61-.08-.14-.3-.22-.63-.38Z"/></svg>
   </a>
 
-  <script>
-    // Número de WhatsApp: placeholder conforme solicitado. Substitua "." pelo seu número (apenas dígitos) quando quiser.
-    const RAW_WA_NUMBER = "11994395776"; // Seu número sem DDI
-    function normalizeNumber(n){
-      const digits = (n||"").replace(/\D/g, "");
-      if(digits.startsWith("55")) return digits; // já tem DDI BR
-      return "55" + digits; // adiciona DDI BR por padrão
-    }
-    const WA_NUMBER = normalizeNumber(RAW_WA_NUMBER);
-    function waUrl(message){
-      return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(message);
-    }
-
-    // Atualiza os cliques dos links do WhatsApp para abrir com mensagem pronta
-    function setupWaLinks(){
-      document.querySelectorAll('.wa-link').forEach(a=>{
-        const getMsg = () => a.getAttribute('data-message') || "Olá, gostaria de solicitar um orçamento para peças.";
-        const url = waUrl(getMsg());
-        // Define o link de fallback
-        a.setAttribute('href', url);
-        a.setAttribute('target','_blank');
-        a.setAttribute('rel','noopener');
-        // Abre imediatamente ao clicar
-        a.addEventListener('click', (e)=>{
-          e.preventDefault();
-          window.open(waUrl(getMsg()), '_blank', 'noopener');
-        });
-      });
-    }
-
-    // Navegação suave + fechar menu mobile ao clicar
-    function setupNav(){
-      const mobileMenu = document.getElementById('mobileMenu');
-      const menuBtn = document.getElementById('menuBtn');
-      menuBtn?.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
-      mobileMenu?.querySelectorAll('a').forEach(link=>{
-        link.addEventListener('click', ()=> mobileMenu.classList.add('hidden'));
-      });
-      // Ajuste de offset do header para rolagem
-      document.querySelectorAll('a[href^="#"]').forEach(link=>{
-        link.addEventListener('click', (e)=>{
-          const href = link.getAttribute('href');
-          if(href && href.startsWith('#') && href.length>1){
-            const el = document.querySelector(href);
-            if(el){
-              e.preventDefault();
-              const headerH = document.querySelector('header').offsetHeight;
-              const top = el.getBoundingClientRect().top + window.pageYOffset - (headerH + 10);
-              window.scrollTo({top, behavior:'smooth'});
-            }
-          }
-        });
-      });
-    }
-
-    // Galeria overlay
-    function setupGallery(){
-      const overlay = document.getElementById('galleryOverlay');
-      const overlayImg = document.getElementById('overlayImg');
-      const closeBtn = document.getElementById('closeOverlay');
-      document.querySelectorAll('#galeria button img').forEach(img=>{
-        img.parentElement.addEventListener('click', ()=>{
-          overlayImg.src = img.src;
-          overlay.classList.remove('hidden');
-          overlay.classList.add('flex');
-        });
-      });
-      function close(){ overlay.classList.add('hidden'); overlay.classList.remove('flex'); overlayImg.src=''; }
-      closeBtn.addEventListener('click', close);
-      overlay.addEventListener('click', (e)=>{ if(e.target===overlay) close(); });
-      document.addEventListener('keydown', (e)=>{ if(!overlay.classList.contains('hidden') && e.key==='Escape') close(); });
-    }
-
-    // Busca e filtro do catálogo
-    function setupCatalogSearch(){
-      const input = document.getElementById('searchInput');
-      const filter = document.getElementById('brandFilter');
-      const btn = document.getElementById('searchBtn');
-      const cards = Array.from(document.querySelectorAll('.category-card'));
-
-      function apply(){
-        const term = (input.value||"").trim().toLowerCase();
-        const brand = filter.value;
-        cards.forEach(card=>{
-          const cardBrand = card.getAttribute('data-brand');
-          const text = card.innerText.toLowerCase();
-          const byBrand = (brand==="Todas") || (brand===cardBrand);
-          const byText = term==="" || text.includes(term);
-          card.style.display = (byBrand && byText) ? '' : 'none';
-        });
-      }
-      btn.addEventListener('click', apply);
-      input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') apply(); });
-      filter.addEventListener('change', apply);
-    }
-
-    // Inicialização
-    document.addEventListener('DOMContentLoaded', ()=>{
-      setupWaLinks();
-      setupNav();
-      setupGallery();
-      setupCatalogSearch();
-    });
-  </script>
-  
-
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'975cb292d5f34e89',t:'MTc1NjMwOTU0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  <!-- Referência ao arquivo JS externo -->
+  <script src="script.js"></script>
+</body>
 </html>
